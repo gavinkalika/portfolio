@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <link
+            href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+            rel="stylesheet"
+    />
+
+    <title>GK's Portfolio</title>
+
+    <link href="{{ url_for('static',filename='/vendor/bootstrap/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='/css/fontawesome.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename= '/css/style.css') }}">
+</head>
+
+<body>
+
+<!-- Sidebar Menu -->
+<div class="responsive-nav">
+    <i class="fa fa-bars" id="menu-toggle"></i>
+    <div id="menu" class="menu" style="float:right; right:-1%">
+        <i class="fa fa-times" id="menu-close"></i>
+        <div class="container">
+            <div class="author-content">
+                <h4 style="color:#fff">Gavin Kalikapersaud</h4>
+                <span>Web Applications Developer</span>
+            </div>
+            <nav class="main-nav" role="navigation">
+                <ul class="main-menu">
+                    <li><a href="#section1">About Me</a></li>
+                    <li><a href="#section2">Technologies</a></li>
+                    <li><a href="#section3">My Projects</a></li>
+                    <li><a href="/downloadResume/" data-ignore="true">Resume</a></li>
+                </ul>
+            </nav>
+            <div class="socials">
+                <ul class="social-icons">
+                    <li>
+                        <a href="https://twitter.com/gkalikapersaud"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/gkalika/"><i class="fa fa-linkedin"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="copyright-text">
+                <p>Copyright <span id="copyright-year"></span></p>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="main-wrapper">
+    <section data-section="section1" style="min-height:20vh" class="section" >
+        <div class="container">
+            <div class="section-heading">
+                <h2>About Me</h2>
+                <div class="line-dec"></div>
+                <span
+                >Full Stack Developer</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="section technologies" data-section="section2">
+        <div class="container">
+            <div class="section-heading">
+                <h2>Technologies</h2>
+                <div class="line-dec"></div>
+                <span
+                >I am open to working with different sets of technologies. However, list is below is what
+                I have been exposed to the most throughout my professional career as a developer.</span
+                >
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="tech-item">
+                        <h4>PHP 7</h4>
+                        <p>Utilized mostly Symfony 4 PHP framework to various web applications.</p>
+                        <p>Developed API to allow business stakeholders to build their own Ecommerce web platform.</p>
+                        <p>Consume various third party APIs/Libraries such as Twilio and BeanStalk.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="tech-item">
+                        <h4>Javascript</h4>
+                        <p>Contributed to business projects that implemented ReactJs, Electron, and NodeJs in their
+                            architecture.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="tech-item">
+                        <h4>MySQL</h4>
+                        <p>
+                            Wrote DML and DLL statements.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section my-work" data-section="section3">
+        <div class="container">
+            <div class="section-heading">
+                <h2>My Projects</h2>
+                <div class="line-dec"></div>
+                <span
+                >Coming Soon ....</span
+                >
+            </div>
+        </div>
+    </section>
+</div>
+
+<script src="{{ url_for('static', filename='/vendor/jquery/jquery.min.js') }}"></script>
+<script src="{{ url_for('static', filename='/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+<script src="{{ url_for('static', filename='/js/isotope.min.js') }}"></script>
+<script src="{{ url_for('static', filename='/js/owl-carousel.js') }}"></script>
+<script src="{{ url_for('static', filename='/js/lightbox.js') }}"></script>
+<script src="{{ url_for('static', filename='/js/custom.js') }}"></script>
+</body>
+</html>
