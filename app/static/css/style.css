@@ -676,7 +676,7 @@ section.contact-me {
 
 @media screen and (min-width: 1681px) {
     .menu {
-        right: 5%;
+        right: 0%;
     }
 
     .section {
@@ -689,7 +689,7 @@ section.contact-me {
 
 @media screen and (max-width: 1680px) {
     .menu {
-        right: 5%;
+        right: 0%;
     }
 
     .section {
